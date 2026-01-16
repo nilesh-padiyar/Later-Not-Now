@@ -1,53 +1,78 @@
-
 # Later, Not Now
 
-Later, Not Now is a calm, privacy-focused space where users can write down
-their thoughts, ideas, and goals — without pressure, deadlines, or tracking.
+**Later, Not Now** is a lightweight, privacy-focused, browser-based note capture application that helps you save thoughts, ideas, and tasks instantly — without distraction, pressure, deadlines or tracking.
 
-This is **not a to-do list**.
-It’s a place to park thoughts for later.
+The app runs entirely on the client side and is deployed using **GitHub Pages**, making it accessible to anyone with a browser.
 
 ---
 
-## Philosophy
-- No accounts
-- No cloud
-- No tracking
-- No data collection
-- Everything stays on the user’s device
+## 🌐 Live Demo
+
+👉 **Live Application:**  
+https://nilesh-padiyar.github.io/Later-Not-Now/
+
+> No installation. No login. Works instantly.
 
 ---
 
-## Current Status
-🚧 Early development
+## 📌 About the Project
 
-- UI built using HTML & CSS
-- JavaScript functionality will be added gradually
-- Data will be stored locally in the browser (localStorage)
+Ideas often appear when you’re busy. *Later, Not Now* provides a simple and private place to store them so you can return later without losing focus.
 
----
-
-## Planned Features
-- Add thoughts / ideas
-- Edit & delete entries
-- Local storage persistence
-- Import / export (manual backup)
-- Calm, distraction-free UI
+This project focuses on:
+- Simplicity
+- Offline-first design
+- Privacy
+- Clean, beginner-friendly code
 
 ---
 
-## Tech Stack
-- HTML
-- CSS
-- JavaScript (in progress)
+## ✨ Features
+
+- 💭 Save **Thoughts**
+- 💡 Save **Ideas**
+- 🎯 Save **Tasks / Goals**
+- 💾 Persistent storage using **Browser Local Storage**
+- 📤 Export saved data as a JSON file
+- 📥 Import data from a JSON backup
+- ⚡ Fast and dependency-free
+- 🔒 No tracking, no backend, no external APIs
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5** — Structure  
+- **CSS3** — Styling  
+- **Vanilla JavaScript** — Logic & Local Storage  
+
+Deployed using **GitHub Pages**
 
 ---
 
 ## Privacy
+
 Later, Not Now does **not** collect or transmit any personal data.
 All content stays on the user’s device.
 
 ---
 
+## ⚠️ Important Note on Data Storage
+
+All notes, ideas, and tasks are stored **locally in your browser** using **Local Storage**.
+
+This means:
+
+- Your data stays **private** and never leaves your device
+- Clearing **browser data**, **site data**, or using **incognito/private mode** will permanently remove saved notes
+- Data may also be lost if you switch browsers or devices
+
+👉 **Recommendation:**  
+Use the **Export (JSON)** feature regularly to create backups of your data and store them safely.
+Then **Import** your data again safely.
+
+---
+
 ## License
+
 MIT

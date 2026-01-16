@@ -1,29 +1,56 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Later, Not Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Heading">
+        <h2 id="mainHeading"><i>Later, Not Now</i></h2>
+        <p id="intro1"><i>We remember your ideas and thoughts. So you won't forget.</i></p>
+        <p id="intro2"><i>Because ideas worth more than anything.</i></p>
+    </div>
 
-    <head>
-      <title>Later, Not Now</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
-      <h2 id="mainHeading"><i>Later, Not Now</i></h2>
-      <p id="intro1"><i>We remember your ideas and thoughts. So you won't forget.</i></p>
-      <p id="intro2"><i>Because ideas worth more than anything.</i></p>
-      
-      <h4 id="haveThought"><i>Have a thought, Save it!</i></h4>
-      <p id="noworlater"><i>(for now or later)</i></p>
+    <div id="subHeading">
+        <h4 id="haveThought"><i>Have a thought, Save it!</i></h4>
+        <p id="noworlater"><i>(for now or later)</i></p>
+    </div>
 
-      <div id="controls">
+    <div id="inputContainer" style="display:none; margin-left: 3.8%; margin-top: 2%;">
+        <textarea id="noteInput" placeholder="Type here..." rows="3" style="width: 80%; border-radius: 10px; padding: 10px; border: 1px solid black; background: #fffaf0;"></textarea>
+        <br>
+        <button id="saveNoteBtn" style="margin-top: 10px; padding: 8px 20px; border-radius: 10px; background-color: #d1e7dd; border: 1px solid black; cursor: pointer;">Save</button>
+        <button id="cancelBtn" style="margin-top: 10px; padding: 8px 20px; border-radius: 10px; background-color: #f8d7da; border: 1px solid black; cursor: pointer;">Cancel</button>
+    </div>
+
+    <div id="controls">
         <button id="button1">A Thought 💭</button>
         <button id="button2">An Idea 💡</button>
         <button id="button3">A Task or Goal 🎯</button>
-      </div>
+    </div>
 
-      <h4 id="savedHistory"><i>Your saved thoughts, ideas and tasks/goals -</i></h4>
-      <p class="line">   </p>
-      
-      <script src="script.js"></script>
-    </body>
+    <h4 id="savedHistory"><i>Your saved thoughts, ideas and tasks/goals -</i></h4>
 
-    </html>
+    <p class="line"></p>
+
+    <div id="searchContainer" style="margin-left: 3.8%; margin-right: 3.8%; margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <input type="text" id="searchInput" placeholder="Search notes..." style="flex-grow: 1; padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+        <select id="sortOrder" style="padding: 8px; border-radius: 8px; border: 1px solid #ccc;">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+        </select>
+    </div>
+
+    <div id="notesList" style="margin-left: 3.8%; margin-right: 3.8%; margin-top: 2%;"></div>
+
+    <div style="margin-top: 30px; margin-left: 3.8%; margin-bottom: 30px;">
+        <button id="exportBtn" style="padding: 5px 10px; border-radius: 5px; border: 1px solid black; background: #e2e3e5;">Export Data (JSON)</button>
+        <button id="importBtn" style="padding: 5px 10px; border-radius: 5px; border: 1px solid black; background: #e2e3e5;">Import Data</button>
+        <input type="file" id="fileInput" style="display: none;" accept=".json">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
