@@ -1,76 +1,121 @@
 
+* {
+box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     background-color: antiquewhite;
+    font-family: system-ui, sans-serif;
 }
 
-#mainHeading {
-    margin-left: 6%;
-    margin-top: 3.8%;
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 16px;
 }
 
-#intro1 {
-    margin-top: 0%;
-    margin-left: 2.7%;
-    margin-bottom: 0.5%;
+header h2 {
+    margin-bottom: 5px;
 }
 
-#intro2 {
-    margin-top: 0%;
-    margin-left: 2.4%;
+section {
+    margin-top: 20px;
 }
 
-#haveThought {
-    margin-left: 3%;
-    margin-top: 3%;
-    margin-bottom: 0.5%;
+#controls {
+display: flex;
+gap: 12px;
+margin: 20px 0;
+flex-wrap: wrap;
 }
 
-#noworlater {
-    margin-left: 3.8%;
-    margin-top: 0.01%;
-    margin-bottom: 1%;
-    box-sizing: border-box;
-    position: relative;
+#controls button {
+flex: 1;
+padding: 13px;
+border-radius: 15px;
+border: 2px groove black;
+cursor: pointer;
 }
 
-#button1 {
-    border-radius: 15px;
-    text-align: center;
-    border: groove black 1px;
-    border-width: 2px;
-    padding: 13px;
-    background-color: honeydew;
-    margin-left: 3.2%;
-    margin-right: 1.5%;
-    margin-top: 1%;
-}
-#button2 {
-    margin-top: 1%;
-    border-radius: 15px;
-    text-align: center;
-    border: groove black 1px;
-    border-width: 2px;
-    padding: 13px;
-    background-color: lavender;
-    margin-right: 1.5%;
-}
-#button3 {
-    margin-top: 1%;
-    border-radius: 15px;
-    text-align: center;
-    border: groove black 1px;
-    border-width: 2px;
-    padding: 13px;
-    background-color: lavenderblush;
-    margin-right: 1.5%;
+#button1 { background: honeydew; }
+#button2 { background: lavender; }
+#button3 { background: lavenderblush; }
+
+#inputContainer {
+margin-top: 15px;
 }
 
-#savedHistory {
-    margin-left: 3.8%;
-    margin-top: 3.8%;
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    resize: vertical;
 }
 
-.line {
-    border-bottom: groove gainsboro;
-    margin-top: 1.7%;
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.save {
+    background: #d1e7dd;
+}
+
+.cancel {
+    background: #f8d7da;
+}
+
+.action-buttons button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#searchContainer {
+display: flex;
+gap: 10px;
+margin: 15px 0;
+}
+
+#searchContainer input,
+#searchContainer select {
+padding: 12px;
+border-radius: 8px;
+border: 1px solid #ccc;
+width: 100%;
+}
+
+.import-export {
+    margin: 25px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.import-export button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: #e2e3e5;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    #controls {
+    flex-direction: column;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    #searchContainer {
+    flex-direction: column;
+    }
 }

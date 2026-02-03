@@ -1,12 +1,12 @@
 # Later, Not Now
 
-**Later, Not Now** is a lightweight, privacy-focused, browser-based note capture application that helps you save thoughts, ideas, and tasks instantly — without distraction, pressure, deadlines or tracking.
+**Later, Not Now** is a lightweight, privacy-focused, browser-based note capture application that helps you save thoughts, ideas, and tasks instantly without any distraction, pressure, deadlines or tracking.
 
 The app runs entirely on the client side and is deployed using **GitHub Pages**, making it accessible to anyone with a browser.
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Site
 
 👉 **Live Application:**  
 https://nilesh-padiyar.github.io/Later-Not-Now/
@@ -69,7 +69,6 @@ This means:
 
 👉 **Recommendation:**  
 Use the **Export (JSON)** feature regularly to create backups of your data and store them safely.
-Then **Import** your data again safely.
 
 ---
 
